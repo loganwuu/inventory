@@ -7,7 +7,7 @@
 
     require_once "src/inventory.php";
 
-    $server = 'mysql:host=localhost;dbname=to_do_test';
+    $server = 'mysql:host=localhost;dbname=inventory_test';
     $username = 'root';
     $password = 'root';
     $DB = new PDO($server, $username, $password);
