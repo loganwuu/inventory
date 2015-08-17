@@ -1,12 +1,12 @@
 # To Do List 2
 
-##### User generated to-do list implementing SQL and BDD (8/17/2015)
+##### User generated inventory list implementing SQL and BDD (8/17/2015)
 
 #### By Logan Wu & Mike Rapp
 
 ## Description
 
-Allows user to create new tasks and new categories in a to-do list, view them, and then delete them.
+Allows user to create new items in an inventory list, view them, and then delete them.
 
 ## Setup
 
