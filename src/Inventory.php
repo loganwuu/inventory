@@ -49,13 +49,13 @@
             $GLOBALS['DB']->exec("DELETE FROM inventories;");
         }
 
-        static function find($search_id)
+        static function find($search_name)
         {
             $found_inventory = null;
             $inventories = Inventory::getAll();
             foreach($inventories as $inventory) {
-                $inventory_id = $inventory->getId();
-                if ($inventory_id == $search_id) {
+                $inventory_name = $inventory->getDescription();
+                if ($inventory_name == $search_name) {
                     $found_inventory = $inventory;
                 }
             }

@@ -16,12 +16,20 @@
             </ul>
         {% endif %}
 
+        <form action='/search'>
+            <div class="form-group">
+                <label for='search'>Search Inventory</label>
+                <input id='search' name='search' class="form-control" type='text'>
+            </div>
+            <button type='submit' class="btn-success">Search </button>
+        </form>
+
         <form action='/inventories' method='post'>
             <div class="form-group">
                 <label for='description'>Inventory Description</label>
                 <input id='description' name='description' class="form-control" type='text'>
             </div>
-            <button type='submit' class="btn-success">Add Inventory</button>
+            <button type='submit' class="btn-success">Add</button>
         </form>
 
         <form action='/delete_inventories' method='post'>

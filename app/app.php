@@ -24,8 +24,13 @@
     });
 
     $app->post("/delete_inventories", function() use ($app) {
-      inventory::deleteAll();
+      Inventory::deleteAll();
       return $app['twig']->render('delete_inventories.html.twig');
+    });
+
+    $app->get("/search", function() use ($app) {
+        $search_result = Inventory::find($_POST['search']);
+        return $app['twig']->render('search_results.html.twig', array('search' => $search_result));
     });
 
     return $app;
