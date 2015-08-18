@@ -29,7 +29,7 @@
     });
 
     $app->get("/search", function() use ($app) {
-        $search_result = Inventory::find($_POST['search']);
+        $search_result = Inventory::find($_GET['search']);
         return $app['twig']->render('search_results.html.twig', array('search' => $search_result));
     });
 
